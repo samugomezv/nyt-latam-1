@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Gómez - The New York Times</title>
+  <link rel="icon" href="https://www.nytimes.com/vi-assets/static-assets/favicon-4bf96a1b3f81c339ac1c5a3734f4f0c8.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header data-testid="masthead" class="masthead">
+    <div class="masthead-inner">
+
+      <div class="masthead-left">
+        <button class="masthead-btn" aria-label="Sections and Search">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="#333" aria-hidden="true">
+            <rect x="1" y="3" width="14" height="2"/>
+            <rect x="1" y="7" width="14" height="2"/>
+            <rect x="1" y="11" width="14" height="2"/>
+          </svg>
+        </button>
+        <button class="masthead-btn search-btn" aria-label="Search">
+          <svg viewBox="0 0 13 13" width="13" height="13" fill="none" aria-hidden="true">
+            <path d="M12.3 12.3L8.9 8.9m1.6-3.4a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <a class="masthead-logo" href="#" aria-label="The New York Times">
+        <img src="NYTLogo.svg" alt="The New York Times" class="masthead-logo-img" />
+      </a>
+
+      <div class="masthead-right">
+        <a class="btn-subscribe" href="#">Subscribe for $0.25/week</a>
+        <a class="btn-login" href="#">Log in</a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="site-content">
+    <div class="capsule-container">
+
+      <!-- PROFILE HERO -->
+      <header class="profile-header" id="about">
+        <div class="profile-meta-wrap">
+          <div class="profile-row">
+
+            <!-- Photo -->
+            <div class="profile-photo-wrap">
+              <img src="profile.jpeg" alt="Samuel Gómez" class="profile-photo-img" />
+            </div>
+
+            <!-- Name + tagline -->
+            <div class="profile-text">
+              <div class="profile-heading-group">
+                <h1 class="profile-name"><div>Samuel Gómez</div></h1>
+              </div>
+              <h2 class="profile-tagline">Samuel Gómez is a Latin America correspondent at The New York Times.</h2>
+            </div>
+
+          </div>
+        </div>
+      </header>
+
+      <!-- PROFILE NAV -->
+      <nav class="profile-nav" aria-label="Byline page sections">
+        <ul>
+          <li class="nav-item nav-item--active"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+          <li class="nav-item"><a href="#latest">Latest</a></li>
+        </ul>
+      </nav>
+
+      <!-- ABOUT -->
+      <section id="about-content">
+
+        <h3 class="section-heading">What I Cover</h3>
+        <p class="body-text">I cover Latin America — its politics, culture, and the stories of the people who live through both. My beat runs from Chile to Mexico, from Caribbean ports to Andean highland towns, with music and popular culture as a constant thread. When a festival shuts down a city, when a new artist breaks across borders, when a diaspora finds its sound in a foreign country — those are my stories. They are also dispatches about identity, aspiration and what the region is becoming.</p>
+
+        <h3 class="section-heading">My Background</h3>
+        <p class="body-text">I was born in Venezuela and grew up between Caracas and the llanos, where my grandmother kept the radio on all day and my father's cassette collection covered everything from Simón Díaz to Rubén Blades. I studied journalism at the Universidad Central de Venezuela and left in 2011 as the country's crisis deepened, joining what would become one of the largest diasporas in the Western Hemisphere.</p>
+        <p class="body-text">I settled in Santiago, Chile, and spent years reporting on Venezuela's collapse from the outside — interviewing exiles, tracking migration routes, documenting the human cost of a country in free fall. At the same time I embedded myself in Chile's own story: its protests, its music scene, its complicated relationship with memory and modernity. I joined The Times in 2014 and have since reported from Argentina, Brazil, Colombia, Mexico, Cuba and across the Caribbean. In fourteen years I have covered two World Cups, three consecutive Lollapalooza festivals, the 2019 Chilean uprising, and the emergence of reggaeton and Latin trap as genuinely global phenomena.</p>
+
+        <h3 class="section-heading">Journalistic Ethics</h3>
+        <p class="body-text">The best journalism about a place comes from correspondents who stay long enough to understand it — and care enough to tell hard truths about it. I report in Spanish, build sources over years and resist the pull of parachute coverage. I believe Latin America deserves the same depth of attention the Times gives to any place that matters. It does.</p>
+
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h3 class="section-heading section-heading--rule">Contact</h3>
+        <ul class="contact-list">
+          <li>
+            <p class="contact-detail"><strong>Email</strong><br/>For tips and press inquiries, use The New York Times official contact channels at <a href="#">nytimes.com/tips</a>.</p>
+          </li>
+          <li>
+            <p class="contact-detail"><strong>Signal</strong><br/>Available for sources seeking secure communication. Contact via <a href="#">The Times's secure tips page</a>.</p>
+          </li>
+          <li>
+            <p class="contact-detail"><strong>Twitter / X</strong><br/><a href="#">@SamuelGomezNYT</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- LATEST -->
+      <section id="latest">
+        <h3 class="section-heading section-heading--rule">Latest</h3>
+        <ol class="article-list">
+
+          <li class="article-item">
+            <div class="article-date-label">March 17, 2025</div>
+            <article class="article-card">
+              <figure class="article-thumb">
+                <img src="photos/lolla.png" alt="Lollapalooza Chile 2025" />
+              </figure>
+              <a class="article-link" href="#">
+                <h3 class="article-headline">Lollapalooza Chile 2025: Billie Eilish, Post Malone and the Sound of a Generation Finding Itself</h3>
+              </a>
+              <p class="article-summary">Three days of music in Santiago's Parque Bicentenario drew 300,000 attendees and raised a question the festival industry is still trying to answer: who does Gen Z actually want to see live?</p>
+              <p class="article-byline">By <span>Samuel Gómez</span></p>
+            </article>
+          </li>
+
+          <li class="article-item">
+            <div class="article-date-label">March 4, 2025</div>
+            <article class="article-card">
+              <figure class="article-thumb">
+                <img src="photos/carnaval.webp" alt="Brazil Carnival 2025" />
+              </figure>
+              <a class="article-link" href="#">
+                <h3 class="article-headline">Brazil's Carnival Is Back, Louder Than Ever and Asking Hard Questions</h3>
+              </a>
+              <p class="article-summary">Rio's sambódromo returned with record participation and a wave of politically charged performances. Beneath the feathers and the drums, this year's Carnival had a lot to say.</p>
+              <p class="article-byline">By <span>Samuel Gómez</span></p>
+            </article>
+          </li>
+
+          <li class="article-item">
+            <div class="article-date-label">Feb. 21, 2025</div>
+            <article class="article-card">
+              <figure class="article-thumb">
+                <img src="photos/Bad-Bunny-2025-Credit-Eric-Rojas-billboard-1800.webp" alt="Bad Bunny 2025" />
+              </figure>
+              <a class="article-link" href="#">
+                <h3 class="article-headline">Bad Bunny Is Doing It Again. Twenty Stadiums. Forty-Eight Hours. Latin America Can't Get Enough.</h3>
+              </a>
+              <p class="article-summary">His new tour sold out across the continent before most people knew it was on sale. How did a kid from Vega Alta become the region's most reliable spectacle?</p>
+              <p class="article-byline">By <span>Samuel Gómez</span></p>
+            </article>
+          </li>
+
+          <li class="article-item">
+            <div class="article-date-label">Jan. 30, 2025</div>
+            <article class="article-card">
+              <figure class="article-thumb">
+                <img src="photos/Karol g.jpg" alt="Karol G and Feid" />
+              </figure>
+              <a class="article-link" href="#">
+                <h3 class="article-headline">Karol G and Feid Are Reshaping What Medellín Means to the World</h3>
+              </a>
+              <p class="article-summary">A city once defined by its darkest chapter is now the epicenter of Latin pop. The artists who grew up there say it was always like that — the world just wasn't listening.</p>
+              <p class="article-byline">By <span>Samuel Gómez</span></p>
+            </article>
+          </li>
+
+          <li class="article-item">
+            <div class="article-date-label">Jan. 8, 2025</div>
+            <article class="article-card">
+              <figure class="article-thumb">
+                <img src="photos/venezuela.jpg" alt="Venezuelan Diaspora" />
+              </figure>
+              <a class="article-link" href="#">
+                <h3 class="article-headline">The Venezuelan Diaspora Has a New Sound. It's Being Made in Santiago, Bogotá and Miami.</h3>
+              </a>
+              <p class="article-summary">More than seven million Venezuelans have left their country. Many brought instruments. A generation of exiled musicians is building something new in their adopted cities.</p>
+              <p class="article-byline">By <span>Samuel Gómez</span></p>
+            </article>
+          </li>
+
+          <li class="article-item">
+            <div class="article-date-label">Dec. 12, 2024</div>
+            <article class="article-card">
+              <figure class="article-thumb">
+                <img src="photos/kendrick.jpg" alt="Lollapalooza Argentina Kendrick Lamar" />
+              </figure>
+              <a class="article-link" href="#">
+                <h3 class="article-headline">Lollapalooza Argentina: Kendrick Lamar Headlines a Festival That Has Grown Up</h3>
+              </a>
+              <p class="article-summary">Buenos Aires's version of the touring festival has spent years finding its footing. This year, it finally knew who it was.</p>
+              <p class="article-byline">By <span>Samuel Gómez</span></p>
+            </article>
+          </li>
+
+        </ol>
+      </section>
+
+    </div><!-- /capsule-container -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img src="NYTLogo.svg" alt="The New York Times" class="footer-logo-img" />
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#">Home Page</a><a href="#">World</a><a href="#">U.S.</a><a href="#">Politics</a>
+        <a href="#">Business</a><a href="#">Tech</a><a href="#">Science</a><a href="#">Health</a>
+        <a href="#">Sports</a><a href="#">Arts</a><a href="#">Books</a><a href="#">Style</a>
+        <a href="#">Food</a><a href="#">Travel</a><a href="#">Magazine</a><a href="#">T Magazine</a>
+        <a href="#">Real Estate</a><a href="#">Video</a>
+      </nav>
+      <div class="footer-legal">
+        <a href="#">NYTCo</a><a href="#">Contact Us</a><a href="#">Accessibility</a>
+        <a href="#">Work with us</a><a href="#">Advertise</a><a href="#">Your Ad Choices</a>
+        <a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Terms of Sale</a>
+        <a href="#">Site Map</a><a href="#">Help</a><a href="#">Subscriptions</a>
+      </div>
+      <p class="parody-notice">Parody. Not affiliated with or endorsed by The New York Times. Created for satirical purposes only. Not intended for impersonation, deception, or any unlawful use.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

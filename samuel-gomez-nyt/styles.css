@@ -1,0 +1,596 @@
+/* ============================================================
+   NYT PROPRIETARY FONTS — loaded directly from NYT CDN
+   Exact filenames extracted from web-fonts CSS saved locally
+   ============================================================ */
+
+/* nyt-cheltenham (name / headings) */
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('https://g1.nyt.com/fonts/family/cheltenham/cheltenham-normal-200.40ccfe2cc61a71e6617e56162d49b896.woff2') format('woff2');
+  font-weight: 200; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('https://g1.nyt.com/fonts/family/cheltenham/cheltenham-normal-300.7ea91ebd036309e1fe756ee3aab272da.woff2') format('woff2');
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('https://g1.nyt.com/fonts/family/cheltenham/cheltenham-normal-400.a3ed7afe3eaa0a873f3fbd379f8c491b.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('https://g1.nyt.com/fonts/family/cheltenham/cheltenham-normal-700.530cfb72378419eedb60da7e266ad5f1.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+/* nyt-imperial (body text) */
+@font-face {
+  font-family: 'nyt-imperial';
+  src: url('https://g1.nyt.com/fonts/family/imperial/imperial-normal-400.6131cd77b6e216c7693ed925f4309ffc.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'nyt-imperial';
+  src: url('https://g1.nyt.com/fonts/family/imperial/imperial-normal-600.d93ee3805e0b842a93c3061849fc1862.woff2') format('woff2');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+
+/* nyt-franklin (UI / nav / labels) */
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('https://g1.nyt.com/fonts/family/franklin/franklin-normal-500.a0c83e9b7e58824c2eec882ac7e6f23c.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('https://g1.nyt.com/fonts/family/franklin/franklin-normal-700.91eaf6b5642463af4091160b4bbfdfcb.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+/* Local Cheltenham fallback (from /fonts/ folder) */
+@font-face {
+  font-family: 'cheltenham-fallback-local';
+  src: url('fonts/415c1cffdc1ffdf955cdd328ad4a4c87.woff2') format('woff2'),
+       url('fonts/415c1cffdc1ffdf955cdd328ad4a4c87.woff') format('woff'),
+       url('fonts/415c1cffdc1ffdf955cdd328ad4a4c87.ttf') format('truetype');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+
+/* ============================================================
+   RESET (matches NYT global.css exactly)
+   ============================================================ */
+html, body, div, span, h1, h2, h3, h4, h5, h6,
+p, a, abbr, address, cite, code, em, img, ins,
+small, strong, sub, sup, b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption,
+footer, header, menu, nav, output, section, summary, time, mark {
+  margin: 0; padding: 0; border: 0;
+  font-size: 100%; font: inherit; vertical-align: baseline;
+  text-size-adjust: 100%;
+}
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, summary, main { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+
+/* ============================================================
+   BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+body {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  color: #121212;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ============================================================
+   MASTHEAD / HEADER
+   ============================================================ */
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.masthead-inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 0 10px;
+  height: 56px;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+/* Left — hamburger + search */
+.masthead-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.masthead-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center — NYT wordmark */
+.masthead-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.masthead-logo-img {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+
+/* Right — subscribe + login */
+.masthead-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.btn-subscribe {
+  background: #121212;
+  color: #fff;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.6875rem;   /* 11px */
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 9px 15px;
+  border-radius: 3px;
+  white-space: nowrap;
+  line-height: 1;
+}
+.btn-subscribe:hover { background: #333; }
+
+.btn-login {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.875rem;   /* 14px */
+  font-weight: 500;
+  color: #121212;
+}
+.btn-login:hover { text-decoration: underline; }
+
+/* ============================================================
+   CAPSULE CONTAINER
+   Matches .capsuleContainer from NYT styles.css:
+   max-width 600px, margin auto, width calc(100% - 50px)
+   ============================================================ */
+.capsule-container {
+  max-width: 600px;
+  width: calc(100% - 50px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================================
+   PROFILE HEADER
+   ============================================================ */
+.profile-header {
+  margin: 0; /* .kyt-wmdC4 */
+}
+
+.profile-meta-wrap {
+  margin-bottom: 0; /* .kyt-5Pis2 */
+}
+
+/* flex row with photo + text */
+.profile-row {
+  display: flex;
+  flex-direction: row; /* .kyt-jl6cj desktop */
+  margin-bottom: 0;
+  gap: 24px;
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+
+/* Profile photo */
+.profile-photo-wrap {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  align-self: flex-start;
+  margin-top: 16px; /* aligns photo center with the h1 midpoint */
+}
+
+.profile-photo-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  filter: grayscale(100%);
+}
+
+/* Profile text block */
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem; /* .kyt-Kyls+ desktop */
+}
+
+/* Name h1 — exact values from .kyt-mWAvz desktop */
+.profile-name {
+  font-family: nyt-cheltenham, cheltenham-fallback-local, georgia, 'times new roman', times, serif;
+  font-weight: 300;
+  font-size: 2.5rem;      /* desktop: 2.5rem */
+  line-height: 2.75rem;   /* desktop: 2.75rem */
+  margin-top: 20px;
+  margin-bottom: 1.25rem; /* desktop */
+  color: #121212;
+}
+
+.profile-name div {
+  padding-right: 55px;
+  display: inline;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Tagline h2 — exact values from .kyt-Ar7Nc > h2 desktop */
+.profile-tagline {
+  color: #363636;          /* var(--color-content-secondary) */
+  font-family: nyt-cheltenham, cheltenham-fallback-local, georgia, 'times new roman', times, serif;
+  font-size: 1.5rem;       /* desktop: 1.5rem */
+  line-height: 2rem;       /* desktop: 2rem */
+  font-weight: 200;
+  margin: 0 0 34px 0;
+}
+
+/* ============================================================
+   PROFILE NAV
+   Exact values from .kyt-01HBb + .kyt-ylm0A
+   ============================================================ */
+.profile-nav {
+  margin-bottom: 40px;
+  padding: 0;
+  height: 56px;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.profile-nav > ul {
+  display: block;
+  padding-top: 19px;
+}
+
+/* Nav items — .kyt-ylm0A */
+.nav-item {
+  display: inline-block;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.875rem;    /* 14px */
+  font-weight: 500;
+  line-height: 18.2px;
+  cursor: pointer;
+}
+
+.nav-item:not(:last-child) { margin-right: 40px; }
+.nav-item:first-child       { margin-right: 30px; }
+
+.nav-item a {
+  color: #121212;
+  text-decoration: none;
+}
+
+.nav-item:hover a,
+.nav-item:active a { text-decoration: underline; }
+
+/* Active tab — .kyt-xTwtE */
+.nav-item--active a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* ============================================================
+   SECTION HEADINGS
+   Exact values from .kyt-F0XXR desktop
+   ============================================================ */
+.section-heading {
+  width: 100%;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;   /* 18px */
+  line-height: 25px;
+  margin-left: 0;
+  margin-bottom: 15px;
+  color: #121212;
+}
+
+/* version with top rule (Contact / Latest) */
+.section-heading--rule {
+  margin-top: 48px;
+  padding-top: 14px;
+  border-top: 1px solid #121212;
+}
+
+/* ============================================================
+   BODY TEXT
+   Exact values from .kyt-42b5O desktop — uses nyt-imperial
+   ============================================================ */
+.body-text {
+  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
+  font-size: 1.125rem;   /* 18px */
+  line-height: 1.75rem;  /* 28px */
+  color: #363636;
+  margin-bottom: 1rem;
+}
+
+.body-text:last-child { margin-bottom: 0; }
+
+/* About sections gap */
+#about-content { padding-bottom: 40px; }
+#about-content .section-heading:not(:first-child) {
+  margin-top: 32px;
+}
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+#contact { padding-bottom: 40px; }
+
+.contact-list { margin-top: 0; }
+
+.contact-list li {
+  list-style: none;
+  padding: 18px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.contact-list li:first-child { padding-top: 0; }
+.contact-list li:last-child  { border-bottom: none; }
+
+.contact-detail {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  font-weight: 500;
+  color: #363636;
+}
+
+.contact-detail strong {
+  font-weight: 700;
+  color: #121212;
+}
+
+.contact-detail a {
+  color: #326891;
+  text-decoration: underline;
+}
+.contact-detail a:hover { text-decoration: none; }
+
+/* ============================================================
+   LATEST — ARTICLE LIST
+   ============================================================ */
+#latest { padding-bottom: 60px; }
+
+.article-list { margin: 0; padding: 0; }
+
+.article-item {
+  list-style: none;
+  padding: 20px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.article-item:first-child { padding-top: 0; }
+.article-item:last-child  { border-bottom: none; }
+
+/* Date stamp — matches .css-agsgss */
+.article-date-label {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.6875rem;  /* 11px */
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* Article card — matches .css-1l4spti */
+.article-card {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  grid-template-rows: auto auto auto;
+  column-gap: 16px;
+  align-items: start;
+}
+
+/* Thumbnail — matches .css-1spw4h6 */
+.article-thumb {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.article-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Headline link — matches .css-8hzhxf + .css-1j88qqx */
+.article-link {
+  grid-column: 1;
+  grid-row: 1;
+  text-decoration: none;
+  color: #121212;
+}
+
+.article-headline {
+  font-family: nyt-cheltenham, cheltenham-fallback-local, georgia, 'times new roman', times, serif;
+  font-size: 1.0625rem;   /* 17px */
+  font-weight: 500;
+  line-height: 1.375rem;
+  color: #121212;
+  margin-bottom: 6px;
+}
+
+.article-link:hover .article-headline { text-decoration: underline; }
+
+/* Summary — matches .css-1pga48a */
+.article-summary {
+  grid-column: 1;
+  grid-row: 2;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  color: #363636;
+  margin-bottom: 6px;
+}
+
+/* Byline — matches .css-1y3ykdt */
+.article-byline {
+  grid-column: 1;
+  grid-row: 3;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer {
+  border-top: 3px solid #121212;
+  margin-top: 20px;
+}
+
+.footer-inner {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+}
+
+.footer-logo-img {
+  height: 20px;
+  width: auto;
+  display: block;
+  margin: 0 auto 16px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 12px;
+}
+
+.footer-nav a {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #121212;
+}
+.footer-nav a:hover { text-decoration: underline; }
+
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 10px;
+}
+
+.footer-legal a {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.75rem;
+  color: #666;
+}
+.footer-legal a:hover { text-decoration: underline; }
+
+/* ============================================================
+   PARODY NOTICE — fixed bottom-left, intentionally subtle
+   ============================================================ */
+.parody-notice {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.5rem;
+  line-height: 1.5;
+  color: #c0c0c0;
+  text-align: center;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 600px) {
+  .capsule-container {
+    width: calc(100% - 30px);
+  }
+
+  .masthead-logo {
+    font-size: 1.25rem;
+  }
+
+  .btn-subscribe { display: none; }
+
+  /* profile row stacks on mobile — .kyt-jl6cj mobile */
+  .profile-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* heading group — .kyt-Kyls+ mobile */
+  .profile-text {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .profile-name {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 28px;
+  }
+
+  .profile-tagline {
+    font-size: 1.4375rem;
+    line-height: 1.875rem;
+  }
+
+  .article-card {
+    grid-template-columns: 1fr 80px;
+  }
+
+  .article-thumb {
+    width: 80px;
+    height: 80px;
+  }
+}
